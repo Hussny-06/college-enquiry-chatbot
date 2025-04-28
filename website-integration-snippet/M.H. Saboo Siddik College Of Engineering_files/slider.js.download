@@ -1,0 +1,12 @@
+
+    $(window).load(function(){
+      "use strict";
+      $('.flexslider').flexslider({
+        animation: "slide",
+		slideshowSpeed: 3000, 
+		pauseOnHover: true,
+        start: function(){
+          $('body').removeClass('loading');
+        }
+      });
+    });
